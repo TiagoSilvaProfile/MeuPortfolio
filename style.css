@@ -16,6 +16,7 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
+    --whatsapp-color:green;
 }
 
 htmal {
@@ -59,6 +60,12 @@ section {
     cursor: default;
 }
 
+.navcontainer {
+    display: flex;
+    align-content: space-between;
+}
+
+
 .navbar a {
     font-size: 1rem;
     color: var(--text-color);
@@ -69,6 +76,18 @@ section {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+}
+
+.navcontainer .whatsapp a {
+    font-size: 1rem;
+    color: var(--whatsapp-color);
+    margin-left: 3rem;
+    transition: .3s;
+}
+
+.navcontainer .whatsapp a:hover,
+.navcontainer .whatsapp a.active {
+    color: var(--whatsapp-color);
 }
 
 #menu-icon {
